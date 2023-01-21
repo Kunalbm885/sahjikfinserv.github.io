@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+
+    <!-- JavaScript Bundle with Popper -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;900&display=swap"
+        rel="stylesheet">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <title>Sahjik Finserv & Realty (SFR)</title>
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("vxSzcrmEQGIbJMkeu");
+        })();
+    </script>
+
+
+
+
+
+
+</head>
+
+<body>
+
+    <div class="whatsapp">
+        <a href="https://wa.me/+916355056220">
+            <img src="images/wa.png" alt="">
+        </a>
+    </div>
+
+
+    <div class="main">
+
+
+
+        <div class="nv">
+
+            <nav class="navbar navbar-expand-lg fixed-top navbar bg-light" aria-label="Main navigation">
+
+                <div class="container-fluid">
+                    <div class="logo">
+                        <img src="images/sahjik_logo.png" alt="">
+                    </div>
+                    <div class="ham" onclick="openSide()">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+
+                    <div class="sidebar" id="mySidebar">
+                        <div class="side-con" onclick="closeSide()" id="mySidebarcon">
+                            <div class="cross">
+                                <i class="bi bi-x-circle-fill"></i>
+                            </div>
+                            <div><a href="#" onclick="closeSide()">Home</a></div>
+                            <div><a href="#aboutus" onclick="closeSide()">About Us</a></div>
+                            <div><a href="#product" onclick="closeSide()">Products</a></div>
+                            <div><a href="#services" onclick="closeSide()">Services</a></div>
+                            <div><a href="https://sahjikfinservandrealty.blogspot.com/" onclick="closeSide()">Blog</a>
+                            </div>
+                            <div><a href="#contactus" onclick="closeSide()">Contact Us</a></div>
+                            <div><a href="career.html" onclick="closeSide()">Career</a></div>
+                            <div onclick="window.open('https://sahjikfinserv.investwell.app/app/#/login','mywindow');"><a href="https://sahjikfinserv.investwell.app/app/#/login" onclick="closeSide()" >Login</a></div>
+
+
+
+                            <div><a href="meeting.html" onclick="closeSide()" id="scmeet">Scheduel Meeting</a></div>
+
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="navbar-collapse" id="navbarsExampleDefault">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#aboutus">About Us <i class="bi bi-chevron-down"></i></a>
+                                <div class="dropdown-content">
+                                    <a href="#aboutus">About Us</a>
+                                    <a href="#founders">Meet Our Team</a>
+                                    <a href="career.html">Career</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#product">Product <i class="bi bi-chevron-down"></i></a>
+
+                                <div class="dropdown-content" id="dropdown-content-p">
+                                    <a href="#">1. Mutual Funds </a>
+                                    <a href="#" class="hv">2. Loans <i class="bi bi-caret-down-fill"></i></a>
+                                    <div class="ln">
+                                        <h3>Home Loan</h3>
+                                        <h3>Loan Against Property</h3>
+                                        <h3>Personal Loan</h3>
+                                        <h3>Business Loan</h3>
+                                        <h3>Working Capital</h3>
+                                        <h3>Project Loan</h3>
+                                    </div>
+
+
+                                    <a href="#">3. Fixed Deposit</a>
+
+                                    <a href="#">4. Insurance <i class="bi bi-caret-down-fill"></i></a>
+
+                                    <a href="#">5. Portfolio Management Services & Alternative Investments Funds</a>
+                                    <a href="#">6. Real Estate - Buy Sell and Rent</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#services">Services <i class="bi bi-chevron-down"></i></a>
+                                <div class="dropdown-content">
+                                    <a href="#">Wealth Management</a>
+                                    <a href="#">Insurance Advisory</a>
+                                    <a href="#">Estate Planning</a>
+                                    <a href="#">Tax Planning</a>
+                                    <a href="#">Retirement Planning</a>
+                                    <a href="#">Child Education Investment Planning</a>
+                                    <a href="#">Marriage Investment Planning</a>
+
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://sahjikfinservandrealty.blogspot.com/">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contactus">Contact Us</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="call">
+                        <a href="https://sahjikfinserv.investwell.app/app/#/login" onclick="window.open('https://sahjikfinserv.investwell.app/app/#/login','mywindow');">Login</a>
+                    </div>
+                    <div class="call">
+                        <a href="meeting.html"><i class="bi bi-headset"></i> &nbsp;Schedule Meeting </a>
+                    </div>
+
+                </div>
+
+            </nav>
+
+
+        </div>
+
+
+
+        <!--***************************************** Homepg PART ******************************************************** -->
+
+        <div class="mnpg">
+
+            <div class="blob">
+                <img src="images/cirle.png" alt="">
+            </div>
+
+            <div class="txt-con">
+                <div class="bx">
+                    <h4>
+                        All Financial Solutions At One Place For You !
+                    </h4>
+                </div>
+                <div class="big">
+                    <h1>What will you Get with Our Financial Plan ?</h1>
+                    <p>We Know how it fills to have a dream, A goal fullfilled. We have been successfull in bringing
+                        that happiness to 300+ families! You can be sure of that.</p>
+                </div>
+                <div class="wrapper">
+                    <div class="inwrap">
+                        <div class="words">
+                            <h2>Be Ready</h2>
+                            <h3>Emergency Fund Planning</h3>
+                        </div>
+                        <div class="words">
+                            <h2>Protect Yourself & Family</h2>
+                            <h3>Insurance Planning</h3>
+                        </div>
+                        <div class="words">
+                            <h2>Goal Based Investing</h2>
+                            <h3>Achieve your goals confidently with planned investment bases</h3>
+                        </div>
+                        <div class="words">
+                            <h2>Tax</h2>
+                            <h3>Plan and Save Taxes & file incomeTax Returns on time</h3>
+                        </div>
+                        <div class="words">
+                            <h2>Retirement Planning</h2>
+                            <h3>Live a dignified retired life with apt retirement planning solutions.</h3>
+                        </div>
+                        <div class="words">
+                            <h2>Estate Planning</h2>
+                            <h3>Transfer your hard-earned money in the most tax-efficient manner</h3>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="pros" onclick="window.open('https://sahjikfinserv.investwell.app/app/#/login','mywindow');">
+                    <a href="https://sahjikfinserv.investwell.app/app/#/login" style="z-index: 10000000;">Get
+                        Started</a>
+                </div>
+            </div>
+
+
+            <div class="img-con">
+                <div class="box">
+                    <!-- <img src="images/1.svg" alt=""> -->
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <!--***************************************** ABOUT US PART ******************************************************** -->
+        <div class="abtus" id="aboutus">
+            <div class="divider" style="padding: 5rem; opacity: 0;">
+                <hr>
+            </div>
+            <h1>Who We Are ...</h1>
+
+            <div class="cont">
+                <div class="wwrimg" data-aos="fade-right" data-aos-duration="1000">
+                    <img src="images/abtus.svg" alt="">
+                </div>
+
+
+                <div class="wwr" data-aos="fade-up" data-aos-duration="1000">
+                    <p> Sahjik Finserv and Realty (SFR) was established in the year 2019 by Mrs. Kinjal Patel.<br>
+                        Sahjik Finserv offers wealth management advisory to HNI's, Corporates, Family Offices &
+                        Individuals.
+                        We offer a range of well researched services and products from Mutual Funds, Insurance, Loans,
+                        Fixed
+                        Deposits and Structured Products to Portfolio management solutions.
+
+                        Everyone has the right to individualised, unbiased, and fiduciary counsel, and it is our
+                        objective
+                        to make high-quality financial advice accessible to all.
+                    </p>
+                </div>
+
+
+            </div>
+
+
+            <div class="num">
+                <div>
+                    <div class="num-d">
+                        <h2 class="num-c" data-value="50">50</h2>
+                        <h2>Crore +</h2>
+                    </div>
+                    <h3>AUM</h3>
+                </div>
+                <div>
+                    <div class="num-d">
+                        <h2 class="num-c" data-value="250">300</h2>
+                        <h2>+</h2>
+                    </div>
+                    <h3>Happy Clients</h3>
+                </div>
+                <div>
+                    <div class="num-d">
+                        <h2 class="num-c" data-val="15">15</h2>
+                        <h2>+</h2>
+                    </div>
+                    <h3>Products</h3>
+                </div>
+                <div>
+                    <div class="num-d">
+                        <h2 class="num-c" data-value="10">5</h2>
+                        <h2>+</h2>
+                    </div>
+                    <h3>Years in Industry</h3>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+        <!--***************************************** Product  PART ******************************************************** -->
+        <div class="product" id="product">
+            <div>
+                <div id="lb"></div>
+                <div id="db"></div>
+            </div>
+            <div class="blob">
+                <img src="images/cirle.png" alt="">
+            </div>
+            <div style="background: rgb(239 237 237);">
+                <h1>OUR PRODUCTS</h1>
+
+                <div class="pd">
+
+
+                    <div class="grid-container">
+
+
+                        <div class="prd" data-aos="fade-up" data-aos-offset="10" data-aos-duration="1000">
+
+                            <img src="images/mf.png" alt="">
+                            <a href="mutual_fund.html">
+                                <h2 title="CLICK"> Mutual Funds</h2>
+
+                            </a>
+                        </div>
+                        <div class="prd" data-aos="fade-up" data-aos-offset="10" data-aos-duration="1000">
+                            <img src="images/loan.png" alt="">
+                            <a href="loans.html">
+                                <h2 title="CLICK"> Loans</h2>
+                            </a>
+                        </div>
+                        <div class="prd" data-aos="fade-up" data-aos-offset="10" data-aos-duration="1000">
+                            <img src="images/insua.png" alt="">
+                            <a href="insurance.html">
+                                <h2 title="CLICK">Insurance</h2>
+                            </a>
+                        </div>
+                        <div class="prd" data-aos="fade-up" data-aos-offset="10" data-aos-duration="1000">
+                            <img src="images/fd.png" alt="">
+                            <a href="fixed-deposit.html">
+                                <h2 title="CLICK"> Fixed Deposits</h2>
+                            </a>
+                        </div>
+                        <div class="prd" data-aos="fade-up" data-aos-offset="10" data-aos-duration="1000">
+                            <img src="images/pm.png" alt="">
+                            <a href="pmf.html">
+                                <h2 title="CLICK"> PMS & AFI</h2>
+                            </a>
+                        </div>
+                        <div class="prd" data-aos="fade-up" data-aos-offset="10" data-aos-duration="1000">
+                            <img src="images/re.png" alt="">
+                            <a href="real-estate.html">
+                                <h2 title="CLICK"> Real Estate</h2>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+
+
+        <!--***************************************** Servives  PART ******************************************************** -->
+
+        <div class="ser" id="services">
+            <div class="blob-ser">
+                <img src="images/services/blob-service.png" alt="">
+            </div>
+            <div class="blob-s1">
+            </div>
+            <div class="blob-s2">
+            </div>
+            <h1>OUR SERVICES</h1>
+            <h3>At Sahjik Finserv, our core aim is to serve our clients with dedication and integrity, meet their expectations and build enduring relationship.
+            </h3>
+            <div class="services">
+                <div class="serv-img" data-aos="fade-right" data-aos-duration="1000">
+                    <img src="images/services.jpg" alt="">
+
+                </div>
+
+                <div class="serv-cont">
+                    <div class="serv-r" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="20"
+                        data-aos-delay="10">
+                        <img src="images/services/money-bag.png" alt="">
+                        <h2>Wealth Management</h2>
+                    </div>
+                    <div class="serv-r" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="20"
+                        data-aos-delay="50">
+                        <img src="images/services/health-insurance (1).png" alt="">
+                        <h2>Financial Health Checkup</h2>
+                    </div>
+                    <div class="serv-r" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="20"
+                        data-aos-delay="90">
+                        <img src="images/services/house.png" alt="">
+                        <h2>Estate Investment Planning</h2>
+                    </div>
+                    <div class="serv-r" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="20"
+                        data-aos-delay="130">
+                        <img src="images/services/tax.png" alt="">
+                        <h2>Tax Planning</h2>
+                    </div>
+
+                    <div class="serv-r" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="20"
+                        data-aos-delay="150">
+                        <img src="images/services/retirement-plan.png" alt="">
+                        <h2>Retirement Planning</h2>
+                    </div>
+                    <div class="serv-r" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="20"
+                        data-aos-delay="190">
+                        <img src="images/services/mortarboard.png" alt="">
+                        <h2>Child Education and Investment Planning</h2>
+                    </div>
+                    <div class="serv-r" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="20"
+                        data-aos-delay="230">
+                        <img src="images/services/rings.png" alt="">
+                        <h2>Marriage Investment Planning</h2>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <!--***************************************** App  PART ******************************************************** -->
+
+        <div class="dwnapp">
+            <div class="app_img_wrapp">
+                <div class="app_img">
+                    <div class="app">
+                        <img src="images/app/sahjik_app_1.svg" alt="">
+                    </div>
+                    <div class="app">
+                        <img src="images/app/sahjik_app_2.svg" alt="">
+                    </div>
+                    <div class="app">
+                        <img src="images/app/sahjik_app_1.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="app-con">
+                <h1>Download Our App</h1>
+
+                <h2><i class="bi bi-arrow-bar-right"></i>&nbsp; Financial Goal Planning</h2>
+                <h2><i class="bi bi-arrow-bar-right"></i>&nbsp; Retirement Planning</h2>
+                <h2><i class="bi bi-arrow-bar-right"></i>&nbsp; Emergency/Contingency Planning</h2>
+                <h2><i class="bi bi-arrow-bar-right"></i>&nbsp; Budget and Risk Planning</h2>
+                <h2><i class="bi bi-arrow-bar-right"></i>&nbsp; Direct Chat with Financial Advisors</h2>
+                <h2><i class="bi bi-arrow-bar-right"></i>&nbsp; Access to our Stock-o-meter</h2>
+                <h2><i class="bi bi-arrow-bar-right"></i>&nbsp; Access to Model Portfolios</h2>
+
+                <div class="btnss">
+                    <a href="https://play.google.com/store/apps/details?id=com.iw.mint.app&hl=en"><img
+                            src="images/app/google.png" alt="" id="google">
+                    </a>
+                    <a href=""><img src="images/app/apple.png" alt="" id="apple">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+        <!--***************************************** Founder  PART ******************************************************** -->
+        <div class="divider" id="founder" style="padding: 5rem;opacity: 0;">
+            <hr>
+        </div>
+        <div class="fndr">
+            <div id=" fn"></div>
+            <h1 data-aos="fade-right" data-aos-duration="1000">FOUNDER DESK</h1>
+            <div class="tain">
+                <div class="fndr-l">
+                    <h2>
+
+                        “Only when you believe it’s possible, you make it possible.”<br>
+
+                        It’s imperative to start a journey with ‘Why’. It shapes our decisions and enables us to stay
+                        relevant to our people. Our deep domain understanding, sharp demographic insights, an adaptive
+                        business model and most importantly a strong value system, together functions behind the way
+                        Sahjik does its business.<br><br>
+
+                        Let me share with you some of the key issues that were recognised at the very onset. Primarily,
+                        quality investment services were only reserved for the affluent ones. The personal meetings
+                        didn’t prove remunerative for the advisors which kept the mass audience away from trusted
+                        financial services. Most significantly, lack of financial awareness and literacy proved to be
+                        the root cause of wrong selling of financial products to the masses by ill-intended advisors.
+                        Even with everything falling perfect, the jargons often led to fear and confusion, thus keeping
+                        people away from creating or managing money for a better future.</h2>
+
+                </div>
+                <div class="fndr-r" data-aos="zoom-in-left" data-aos-duration="1500">
+                    <div class="bg">
+                        <h4>Mrs.Kinjal Patel <br> &nbsp;&nbsp;&nbsp;&nbsp;(Founder) </h4>
+                    </div>
+                    <div class="fndr-bg">
+                        <img src="images/founder.png" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="team">
+            <h1>Our Team</h1>
+            <div class="team_container">
+                <div class="team_mem">
+                    <div class="t_imag">
+                        <img src="images/kinjal.png" alt="">
+                        <div class="t_linked_in">
+                            <a href="https://www.linkedin.com/in/kinjal-patel-705231111">
+                                <img src="images/linkedin.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <h2>Mrs.Kinjal Patel </h2>
+                    <h3>Founder</h3>
+                    <h4>Kinjal is a young and dynamic face in the industry with a solution centric attitude. She is an
+                        MBA
+                        in HR, a go-getter and specialist in financial products. Before co-founding Sahjik, she has
+                        been a seasoned Banker and is now the financial products architect of the company.<br>
+
+                    </h4>
+                </div>
+                <div class="team_mem">
+                    <div class="t_imag">
+
+                        <img src="images/chintan.png" alt="">
+                        <div class="t_linked_in">
+                            <a href="https://www.linkedin.com/in/chintan-patil-b43ab8215">
+                                <img src="images/linkedin.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <h2>Mr.Chintan Patil </h2>
+                    <h3>Customer Support - Financial Products</h3>
+                    <h4>Chintan is one of those individuals who is happy to help clients. Keeping a checklist of
+                        priorities he works in the most systematic manner and solves your queries in a snap of a finger!
+                    </h4>
+                </div>
+                <div class="team_mem">
+                    <div class="t_imag">
+                        <img src="images/chetan.png" alt="">
+                        <div class="t_linked_in">
+                            <a href="https://www.linkedin.com/in/chetan-walanjkar-945847239">
+                                <img src="images/linkedin.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <h2>
+                        Mr.Chetan Walanjkar </h2>
+                    <h3>Sales Manager – Real Estate</h3>
+                    <h4>Chetan has 2 Years of Experience in Sales, Marketing and Client Relationship Management. He is
+                        the one stop shop at Sahjik for Real Estate, is street smart, has deep market knowledge and
+                        believes in delivering solutions with absolute clarity without any mis-selling.
+                    </h4>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+        <!--***************************************** QUOTE PART ******************************************************** -->
+
+        <div class="quote">
+            <h1>
+                As said – " TIME is MONEY ". The earlier we start, the better we are. </h1>
+
+            <a href="meeting.html">
+                Schedule Meeting
+            </a>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <!--***************************************** TESTIMONIAL  PART ******************************************************** -->
+        <div id="tesssti">
+            <h1>OUR TESTIMONIALS</h1>
+        </div>
+
+
+        <div class="testi">
+            <div class="owl-carousel owl-theme">
+
+                <div class="item">
+                    <div class="test-img">
+                        <div class="testimonial-il">
+                            <img src="images/testimonial.png" alt="">
+                            <span><img src="images/quotes.png" alt=""></span>
+
+                        </div>
+                        <div class="testi-name">
+                            <h2>Nakul Patel</h2>
+                            <h3>General Manager – Atmiya Properties.</h3>
+                        </div>
+                    </div>
+
+                    <div class="testimonial">
+                        <h2>Though I have heard a lot about mutual funds in past but was reluctant to invest due to risk
+                            involved in this. But the way you explained in a lay man language and helped to distribute
+                            the financial portfolio was absolutely amazing and extremely helpful.</h2>
+                    </div>
+                </div>
+
+
+                <div class="item">
+                    <div class="test-img">
+                        <div class="testimonial-il">
+                            <img src="images/testimonial.png" alt="">
+                            <span><img src="images/quotes.png" alt=""></span>
+
+                        </div>
+                        <div class="testi-name">
+                            <h2>Shivani Shah </h2>
+                            <h3>Travel Blogger</h3>
+                        </div>
+                    </div>
+
+                    <div class="testimonial">
+                        <h2>I would like to appreciate your good work and the endless hours of service that you and your
+                            company have dedicated to my Financial Portfolio. I appreciate your positive attitude and
+                            your ability to motivate people for their Financial needs.</h2>
+                    </div>
+                </div>
+
+
+                <div class="item">
+                    <div class="test-img">
+                        <div class="testimonial-il">
+                            <img src="images/testimonial.png" alt="">
+                            <span><img src="images/quotes.png" alt=""></span>
+
+                        </div>
+                        <div class="testi-name">
+                            <h2>Bhakti Ramnathkar</h2>
+                            <h3>Teacher</h3>
+                        </div>
+                    </div>
+
+                    <div class="testimonial">
+                        <h2>Even knowing the fact that I need an investment planning but just was putting money blindly
+                            in insurance policies to get benefit from tax liabilities. But, throughout the last one year
+                            I can say that right now I am on the right track with Sahjik Finserv.</h2>
+                    </div>
+                </div>
+
+
+                <div class="item">
+                    <div class="test-img">
+                        <div class="testimonial-il">
+                            <img src="images/testimonial.png" alt="">
+                            <span><img src="images/quotes.png" alt=""></span>
+
+                        </div>
+                        <div class="testi-name">
+                            <h2>Nilesh Popat </h2>
+                            <h3>Director - Hapag-Lloyd AG</h3>
+                        </div>
+                    </div>
+
+                    <div class="testimonial">
+                        <h2>Your way of interaction was impressive. Firstly, you understood the needs/goals of my life.
+                            Then afterwards you send me the entire roadmap and also discussed and explained me the
+                            concept very well… The plan sent by you was also customised according to my requirement.
+                        </h2>
+                    </div>
+
+                </div>
+
+                <div class="item">
+                    <div class="test-img">
+                        <div class="testimonial-il">
+                            <img src="images/testimonial.png" alt="">
+                            <span><img src="images/quotes.png" alt=""></span>
+
+                        </div>
+                        <div class="testi-name">
+                            <h2>Kaushik Jethva </h2>
+                            <h3>Software Engineer - Capgemini
+                            </h3>
+                        </div>
+                    </div>
+
+                    <div class="testimonial">
+                        <h2>Engineers are known be bad when it comes to money matters. I was no different until Sahjik
+                            Finserv extended their help. Sahjik Finserv helped me plan mine as well as my family’s
+                            future better Sahjik Finserv team made me wiser in financial planning and investments.</h2>
+                    </div>
+
+                    <div></div>
+                </div>
+
+                <div class="item">
+                    <div class="test-img">
+                        <div class="testimonial-il">
+                            <img src="images/testimonial.png" alt="">
+                            <span><img src="images/quotes.png" alt=""></span>
+
+                        </div>
+                        <div class="testi-name">
+                            <h2>Khushali Raval</h2>
+                            <h3>Alkem Laboratories</h3>
+                        </div>
+                    </div>
+
+                    <div class="testimonial">
+                        <h2>I was very sceptical about investing in mutual funds but somehow took the plunge. Sahjik
+                            Finserv has put my fears at bay, understands my financial goals & is helping me achieve
+                            them. Very impressed by Sahjik Finserv relationship so far.</h2>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="test-img">
+                        <div class="testimonial-il">
+                            <img src="images/testimonial.png" alt="">
+                            <span><img src="images/quotes.png" alt=""></span>
+
+                        </div>
+                        <div class="testi-name">
+                            <h2>CA Deepali Raikundaliya</h2>
+                            <h3> HDFC Bank</h3>
+                        </div>
+                    </div>
+
+                    <div class="testimonial">
+                        <h2>I just wanted to say thank you for the time and energy you put in to making a financial plan
+                            for me. I am associated with them more than 3 years now, during this time I have seen the
+                            way they are managing my portfolio… it is awesome!!</h2>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+
+        </div>
+
+
+        <!--***************************************** CONTACT US PART ******************************************************** -->
+        <div class="conpg" id="contactus">
+            <div class="blob-con1"></div>
+            <div class="blob-con2"></div>
+            <div class="blob-con3"></div>
+            <div class="lr">
+                <div class="right" data-aos="fade-right" data-aos-offset="" data-aos-duration="1000">
+                    <form enctype="multipart/form-data" method="post" id="contact-form" onsubmit="return false">
+
+                        <h1>GET IN TOUCH</h1>
+
+                        <div class="mb-3">
+                            <input type="text" class="form-control" name="from_name" id="from_name"
+                                placeholder="Enter Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" name="from_email" id="from_email"
+                                placeholder="Enter Email" required>
+                        </div>
+                        <div class=" mb-3">
+                            <input type="text" class="form-control" name="from_num" id="from_num"
+                                placeholder="Enter Phone Number" required>
+                        </div>
+
+
+                        <div class="form-group mb-3">
+                            <select class="form-control" name="from_ser" id="exampleFormControlSelect1"
+                                placeholder="Select the Option" required>
+                                <option style="color:gray ;">Select Service for Enquiry</option>
+                                <option>Wealth Management</option>
+                                <option>Insurance Advisory</option>
+                                <option>Estate Planning</option>
+                                <option>Tax Planning</option>
+                                <option>Retirement Planning</option>
+                                <option>Child Education Investment Planning</option>
+                                <option>Marriage Investment Planning</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <textarea class="form-control" id="from_mess" name="from_mess" rows="4"
+                                placeholder="Type Your Message"></textarea>
+                        </div>
+                        <button type="submit"> Submit </button>
+
+                    </form>
+
+                </div>
+
+
+                <div class="left">
+                    <h1 data-aos="fade-left" data-aos-duration="1000">CONTACT US</h1>
+
+
+                    <div class="inleft">
+                        <div class="inl-c">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <h3>Office No - 7, J Kuwar Bldg, Jivdaya Lane, Ghatkopar West, Mumbai, Maharashtra - 400086.
+
+                            </h3>
+                        </div>
+                        <div class="inl-c">
+                            <i class="bi bi-telephone-fill"></i>
+                            <h3>+91-63550 56220 / +91-7208899993</h3>
+
+                        </div>
+                        <div class="inl-c">
+                            <i class="bi bi-envelope-at-fill"></i>
+                            <h3>info@sahjikfinserv.com</h3>
+                        </div>
+                        <div class="inl-c">
+
+                            <h3>Give a Missed call on +91 63550 56220 to arrange a call back from our office or
+                                Whatsapp: +91 63550 56220</h3>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+
+
+            <div class="footer">
+
+                <p> <span id="year">2023</span> <span id="copyright">&#169;</span>Copyrights : Sahjikfinserv.com <br> Developed and Designed
+                    by Bondfire Digital Media</p>
+                <div class="f-right">
+
+                    <div class="icon">
+                        <a href="https://www.facebook.com/sahjikfinserv">
+                            <img src="images/meta.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="icon">
+                        <a href="https://www.linkedin.com/company/utkarsh-financial-services/">
+
+                            <img src="images/linkedin.png" alt="">
+                        </a>
+
+                    </div>
+                    <div class="icon">
+                        <a href="https://instagram.com/sahjik_finserv?igshid=MDM4ZDc5MmU=">
+
+                            <img src="images/instagram.png" alt="">
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- *************************************************************JS*************************************************************************** -->
+    <script src="fun.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+
+
+    <script>
+        AOS.init();
+
+        $(document).ready(function () {
+            $('.num-c').counterUp({
+                delay: 10,
+                time: 1000,
+            });
+        });
+
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            autoplay: true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: true,
+            center: true,
+            loop: true,
+            margin: 60,
+            nav: true,
+            navText: [ '<i class="fa fa-arrow-left"></i>', '<i class="fa fa-arrow-right"></i>' ],
+
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+
+    </script>
+
+
+
+
+</body>
+
+</html>

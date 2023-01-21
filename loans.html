@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+
+    <!-- JavaScript Bundle with Popper -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;900&display=swap"
+        rel="stylesheet">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <title>SahjikFinserv - Loans</title>
+
+    <script>
+        (function () {
+            emailjs.init("vxSzcrmEQGIbJMkeu");
+        })();
+    </script>
+
+
+
+</head>
+
+<body>
+
+    <div class="whatsapp">
+        <a href="https://wa.me/+916355056220">
+            <img src="images/wa.png" alt="">
+        </a>
+    </div>
+
+    <div class="main">
+        <div class="nv">
+
+            <nav class="navbar navbar-expand-lg fixed-top navbar bg-light" aria-label="Main navigation">
+
+                <div class="container-fluid">
+                    <div class="logo">
+                        <img src="images/sahjik_logo.png" alt="">
+                    </div>
+                    <div class="ham" onclick="openSide()">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+
+                    <div class="sidebar" id="mySidebar">
+                        <div class="side-con" onclick="closeSide()" id="mySidebarcon">
+                            <div class="cross">
+                                <i class="bi bi-x-circle-fill"></i>
+                            </div>
+                            <div><a href="index.html" onclick="closeSide()">Home</a></div>
+                            <div><a href="index.html/#aboutus" onclick="closeSide()">About Us</a></div>
+                   
+                            <div><a href="https://sahjikfinservandrealty.blogspot.com/" onclick="closeSide()">Blog</a>
+                            </div>
+                            <div><a href="#contactus" onclick="closeSide()">Contact Us</a></div>
+                            <div><a href="career.html" onclick="closeSide()">Career</a></div>
+
+
+                            <div><a href="meeting.html" onclick="closeSide()" id="scmeet">Scheduel Meeting</a></div>
+
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="navbar-collapse" id="navbarsExampleDefault">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="index.html">About Us <i class="bi bi-chevron-down"></i></a>
+                                <div class="dropdown-content">
+                                    <a href="index.html">About Us</a>
+                                    <a href="index.html">Meet Our Team</a>
+                                    <a href="career.html">Career</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="index.html">Product <i class="bi bi-chevron-down"></i></a>
+
+                                <div class="dropdown-content" id="dropdown-content-p">
+                                    <a href="mutual_fund.html">1. Mutual Funds </a>
+                                    <a href="#" class="hv">2. Loans <i class="bi bi-caret-down-fill"></i></a>
+                                    <div class="ln">
+                                        <h3>Home Loan</h3>
+                                        <h3>Loan Against Property</h3>
+                                        <h3>Personal Loan</h3>
+                                        <h3>Business Loan</h3>
+                                        <h3>Working Capital</h3>
+                                        <h3>Project Loan</h3>
+                                    </div>
+
+
+                                    <a href="fixed-deposit.html">3. Fixed Deposit</a>
+
+                                    <a href="insurance.html">4. Insurance <i class="bi bi-caret-down-fill"></i></a>
+
+                                    <a href="pmf.html">5. Portfolio Management Services & Alternative Investments Funds</a>
+                                    <a href="real-estate.html">6. Real Estate - Buy Sell and Rent</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="index.html">Services <i class="bi bi-chevron-down"></i></a>
+                                <div class="dropdown-content">
+                                    <a href="#">Wealth Management</a>
+                                    <a href="#">Insurance Advisory</a>
+                                    <a href="#">Estate Planning</a>
+                                    <a href="#">Tax Planning</a>
+                                    <a href="#">Retirement Planning</a>
+                                    <a href="#">Child Education Investment Planning</a>
+                                    <a href="#">Marriage Investment Planning</a>
+
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://sahjikfinservandrealty.blogspot.com/">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contactus">Contact Us</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="call">
+                        <a href="meeting.html"><i class="bi bi-headset"></i> &nbsp;Schedule Meeting </a>
+                    </div>
+
+                </div>
+
+            </nav>
+
+
+        </div>
+
+
+
+
+        <!--***************************************** image ******************************************************** -->
+        <div class="real_estate_img">
+            <img src="images/rupixen-com-LGM0PPU9Q4U-unsplash.jpg" alt="">
+
+            <div>
+                <h1 id="mf">Loans</h1>
+            </div>
+        </div>
+
+
+
+        <div class="real_abtus">
+            <div class="abtpara">
+                <h1>Loans at Sahjik !!</h1>
+                <h2>We operate in the Financial Services industry with you as the center of focus. We provide complete,
+                    holistic financial loans to meet all your financial needs. 
+
+                </h2><br><br>
+
+
+                <h3 style="text-align: center;">
+                    Here are few financial loan that we offer !!
+                </h3>
+
+                <div class="grid-container_loan">
+
+                    <div class="loans" id="loan_1">
+                        <h1>
+
+                            Home Loan
+                        </h1>
+                    </div>
+                    <div class="loans" id="loan_2">
+                        <h1>
+
+                            Loan Againt Property
+                        </h1>
+                    </div>
+                    <div class="loans" id="loan_3">
+                        <h1>
+
+                            Personal Loan
+                        </h1>
+                    </div>
+                    <div class="loans" id="loan_4">
+                        <h1>
+
+                            Business Loan
+                        </h1>
+                    </div>
+                    <div class="loans" id="loan_5">
+                        <h1>
+
+                            Working Capital 
+                        </h1>
+                    </div>
+                    <div class="loans" id="loan_6">
+                        <h1>
+
+                            Poject Loan
+                        </h1>
+                    </div>
+        
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+
+        <!--***************************************** CONTACT US PART ******************************************************** -->
+        <div class="conpg" id="contactus">
+            <div class="blob-con1"></div>
+            <div class="blob-con2"></div>
+            <div class="blob-con3"></div>
+            <div class="lr">
+                <div class="right">
+                    <form enctype="multipart/form-data" method="post" id="contact-form" onsubmit="return false">
+
+                        <h1>GET IN TOUCH</h1>
+
+                        <div class="mb-3">
+                            <input type="text" class="form-control" name="from_name" id="from_name"
+                                placeholder="Enter Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" name="from_email" id="from_email"
+                                placeholder="Enter Email" required>
+                        </div>
+                        <div class=" mb-3">
+                            <input type="text" class="form-control" name="from_num" id="from_num"
+                                placeholder="Enter Phone Number" required>
+                        </div>
+
+
+                        <div class="form-group mb-3">
+                            <select class="form-control" name="from_ser" id="exampleFormControlSelect1"
+                                placeholder="Select the Option" required>
+                                <option style="color:gray ;">Select Service for Enquiry</option>
+                                <option>Wealth Management</option>
+                                <option>Insurance Advisory</option>
+                                <option>Estate Planning</option>
+                                <option>Tax Planning</option>
+                                <option>Retirement Planning</option>
+                                <option>Child Education Investment Planning</option>
+                                <option>Marriage Investment Planning</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <textarea class="form-control" id="from_mess" name="from_mess" rows="4"
+                                placeholder="Type Your Message"></textarea>
+                        </div>
+                        <button type="submit"> Submit </button>
+
+                    </form>
+
+                </div>
+
+
+                <div class="left">
+                    <h1>CONTACT US</h1>
+
+
+                    <div class="inleft">
+                        <div class="inl-c">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <h3>Office No - 7, J Kuwar Bldg, Jivdaya Lane, Ghatkopar West, Mumbai, Maharashtra - 400086.
+                            </h3>
+                        </div>
+                        <div class="inl-c">
+                            <i class="bi bi-telephone-fill"></i>
+                            <h3>+91-63550 56220 / +91-7208899993</h3>
+
+                        </div>
+                        <div class="inl-c">
+                            <i class="bi bi-envelope-at-fill"></i>
+                            <h3>info@sahjikfinserv.com</h3>
+                        </div>
+                        <div class="inl-c">
+
+                            <h3>Give a Missed call on +91 63550 56220 to arrange a call back from our office or
+                                Whatsapp: +91 63550 56220</h3>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+
+
+            <div class="footer">
+                <p> <span id="year">2023</span> <span id="copyright">&#169;</span>Copyrights : Sahjikfinserv.com <br>Developed and Designed by Bondfire Digital Media</p>
+                <div class="f-right">
+
+                    <div class="icon">
+                        <a href="https://www.facebook.com/sahjikfinserv">
+                            <img src="images/meta.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="icon">
+                        <a href="https://www.linkedin.com/company/utkarsh-financial-services/">
+
+                            <img src="images/linkedin.png" alt="">
+                        </a>
+
+                    </div>
+                    <div class="icon">
+                        <a href="https://instagram.com/sahjik_finserv?igshid=MDM4ZDc5MmU=">
+
+                            <img src="images/instagram.png" alt="">
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ========================================SCRIPTS======================================================== -->
+    <script src="fun.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+
+</body>
+
+</html>
